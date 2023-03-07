@@ -1,17 +1,18 @@
-import React, { useEffect } from "react";
+import React from "react";
+import Links from "./pages/links";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import About from "./pages/about";
+import Home from "./pages/home";
 
 function App() {
-  const fetchData = async () => {
-    const data = await fetch("https://dummyjson.com/products?limit=10&skip=90");
-    console.log(data.json());
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
   return (
-    <div>
-      <h1>Hello world!!!</h1>
-    </div>
+    <Router>
+      <Links />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
 }
 
