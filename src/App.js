@@ -5,11 +5,6 @@ import About from "./pages/about";
 import Home from "./pages/home";
 
 function App() {
-  /*
-   *smartphones
-   *laptops
-   *"fragrances"
-   */
   return (
     <Router>
       <Links />
