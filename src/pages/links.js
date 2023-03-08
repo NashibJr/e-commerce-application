@@ -4,10 +4,19 @@ import carticon from "../images/cart-icon.jpg";
 
 const Links = () => {
   const [productName, setProductName] = React.useState("");
+  const ref = React.useRef();
+  const handleDisplay = {
+    showCategories: () => {
+      ref.current.style.display = "block";
+    },
+    hideCategories: () => {
+      ref.current.style.display = "none";
+    },
+  };
   return (
     <div className="links-content">
       <h1>
-        <span>xxx</span> shopers
+        <span>xxx</span> shoppers
       </h1>
       <ul>
         <li>
@@ -20,15 +29,20 @@ const Links = () => {
               fontWeight: "bold",
               dislay: "block",
               margin: "10px",
+              marginRight: "110px",
             }}
           >
             Home
           </Link>
         </li>
-        <li>
-          Categories
+        <li
+          style={{ position: "fixed", marginRight: "260px" }}
+          onMouseOver={handleDisplay.showCategories}
+          onMouseLeave={handleDisplay.hideCategories}
+        >
+          categories
           <span>
-            <ul className="dropdown-content">
+            <ul className="dropdown-content" ref={ref}>
               <li>
                 <Link
                   to="/electronics"
@@ -128,7 +142,7 @@ const Links = () => {
               marginLeft: "20px",
             }}
           >
-            About
+            about
           </Link>
         </li>
         <li>

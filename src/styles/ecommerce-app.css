@@ -16,12 +16,10 @@ body {
       flex-direction: row;
       justify-content: space-between;
       margin: 0s;
-      padding-left: 30px;
-      padding-right: 50px;
       border: none;
       border-top: 5px solid dodgerblue;
       flex-wrap: wrap;
-      width: 100%;
+      width: 105%;
       height: 13vh;
       box-shadow: 0px .5px 0 0px black;
       }
@@ -42,6 +40,7 @@ body {
       padding: 0;
       transform: translateX(-9%);
       display: none;
+      position: fixed;
 }
 .dropdown-content li {
       margin-right: 0;
@@ -60,4 +59,66 @@ body {
 }
 .links-content ul input::placeholder {
       color: #000;
+}
+.home-left-content {
+      background: url("C:\Users\Faith\Desktop\e-commerce-app\src\images/shopping2.jpg");
+      padding: 20px;
+      margin: 20px;
+      margin-top: 12vh;
+      width: 40%;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 0 5px 5px #000;
+      background-size: cover;
+      margin-right: 0;
+      height: 300px;
+}
+.home-left-content p {
+      font-weight: bold;
+}
+.home-content {
+      display: flex;
+      width: 100%;
+}
+.home-right-content {
+      display: flex;
+      flex-direction: column;
+      background-color: #dfdfdf;
+      width: 60%;
+      padding: 20px;
+      margin-left: 10vh;
+      margin-top: 11vh;
+      border-radius: 20px;
+      padding-top: 0;
+}
+.home-right-content div {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+}
+.product-content {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      box-shadow: 0 0 5px 5px #000;
+      border-radius: 10px;
+}
+.product-content p {
+      margin: 0;
+      margin-bottom: 5px;
+      margin-top: -13px;
+      font-weight: bold;
+}
+.product-content button {
+      background-color: dodgerblue;
+      font-family: century gothic;
+      padding: 10px;
+      margin: 0;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
 }

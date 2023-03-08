@@ -1,7 +1,5 @@
-import * as React from "react";
-
-const Suspense = ({ loading, fallback, children }) => {
-  return loading ? fallback : children;
+const Suspence = ({ loading, fallback, children }) => {
+  return loading === "pending" ? fallback : children;
 };
 
-export default Suspense;
+export default Suspence;
