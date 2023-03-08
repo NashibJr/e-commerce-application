@@ -1,0 +1,124 @@
+body {
+      box-sizing: border-box;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      margin-left: 10%;
+      margin-right: 15%;
+      font-family: century gothic;
+}
+.links-content span {
+      color: dodgerblue;
+      text-transform: uppercase;
+}
+.links-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0s;
+      border: none;
+      border-top: 5px solid dodgerblue;
+      flex-wrap: wrap;
+      width: 105%;
+      height: 13vh;
+      box-shadow: 0px .5px 0 0px black;
+      }
+.links-content > ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      transform: translateY(7px);
+}
+.links-content ul li {
+      list-style-type: none;
+      margin: 5px;
+      font-weight: bold;
+      display: block;
+}
+.dropdown-content {
+      margin: 0;
+      padding: 0;
+      transform: translateX(-9%);
+      display: none;
+      position: fixed;
+}
+.dropdown-content li {
+      margin-right: 0;
+}
+.links-content ul input {
+      font-family: century gothic;
+      font-size: 1em;
+      padding: 10px;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      background-color: dodgerblue;
+      margin: 0;
+      width: 100%;
+      transform: translate(0%, -8px);
+}
+.links-content ul input::placeholder {
+      color: #000;
+}
+.home-left-content {
+      background: url("C:\Users\Faith\Desktop\e-commerce-app\src\images/shopping2.jpg");
+      padding: 20px;
+      margin: 20px;
+      margin-top: 12vh;
+      width: 40%;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 0 5px 5px #000;
+      background-size: cover;
+      margin-right: 0;
+      height: 300px;
+}
+.home-left-content p {
+      font-weight: bold;
+}
+.home-content {
+      display: flex;
+      width: 100%;
+}
+.home-right-content {
+      display: flex;
+      flex-direction: column;
+      background-color: #dfdfdf;
+      width: 60%;
+      padding: 20px;
+      margin-left: 10vh;
+      margin-top: 11vh;
+      border-radius: 20px;
+      padding-top: 0;
+}
+.home-right-content div {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+}
+.product-content {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      box-shadow: 0 0 5px 5px #000;
+      border-radius: 10px;
+}
+.product-content p {
+      margin: 0;
+      margin-bottom: 5px;
+      margin-top: -13px;
+      font-weight: bold;
+}
+.product-content button {
+      background-color: dodgerblue;
+      font-family: century gothic;
+      padding: 10px;
+      margin: 0;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+}
